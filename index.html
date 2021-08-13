@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--
+
+Grill Template
+
+http://www.templatemo.com/free-website-templates/417-grill
+
+-->
+    <head>
+        <meta charset="utf-8">
+        <title>Zaif world</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="shortcut icon" href="./static/images/favicon.ico" type="image/x-icon" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="./static/css/bootstrap.css">
+        <link rel="stylesheet" href="./static/css/font-awesome.css">
+        <link rel="stylesheet" href="./static/css/templatemo_style.css">
+        <link rel="stylesheet" href="./static/css/templatemo_misc.css">
+        <link rel="stylesheet" href="./static/css/flexslider.css">
+        <link rel="stylesheet" href="./static/css/testimonails-slider.css">
+
+        <script src="./static/js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+
+            <header>
+                <div id="top-header">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="home-account">
+
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="cart-info">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="main-header">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-1">
+                                <div class="logo">
+                                    <a href="{% url 'index' %}"><img src="./static/images/zaif1.gif" height="64px" Width="56px" title="Zaifworld" alt="Zaifworld" > </a>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+<p style="font-family:Arial; font-size:30px; font-weight:bold; padding-top:10px; font-style:italic;">ZAIF WORLD</p>
+<p style="font-family:Arial; font-size:15px; font-weight:bold; padding-bottom:10px; font-style:italic;">EXTERIOR TILE DEALER</p>
+                              </div>
+                            <!-- <div class="col-md-3"><a href="index.html" style="color:black; font-family:Elephant;"><h1> <strong>Zaif World</strong> Associates</h1></a></div> -->
+                            <div class="col-md-6">
+                                <div class="main-menu">
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about-us.html">About</a></li>
+                                        <li><a href="products.html">Products</a></li>
+                                        <li><a href="contact-us.html">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div id="slider">
+                <div class="flexslider">
+                  <ul class="slides">
+
+                    <li>
+                        <div class="slider-caption">
+                            <!-- <h1>Zaif World Tiles</h1>
+                            <p style="font-weight:500;">ZAIF Associates started in the year 2010, as a manufacture and dealer of roof tiles & paver
+                            tiles.</p> -->
+
+                        </div>
+                      <img src="./static/images/slider1.jpg" alt="" />
+                    </li>
+                    <li>
+                        <div class="slider-caption">
+                            <!-- <h1>Zaif World Tiles</h1>
+                            <p style="font-weight:500;">ZAIF Associates started in the year 2010, as a manufacture and dealer of roof tiles & paver
+                            tiles.</p> -->
+
+                        </div>
+                      <img src="./static/images/slider2.jpg" alt="" />
+                    </li>
+                    <li>
+                        <div class="slider-caption">
+                            <!-- <h1>Zaif World Tiles</h1>
+                            <p style="font-weight:500;">ZAIF Associates started in the year 2010, as a manufacture and dealer of roof tiles & paver
+                            tiles.</p> -->
+
+                        </div>
+                      <img src="./static/images/slider3.jpg" alt="" />
+                    </li>
+
+
+
+
+
+                  </ul>
+                </div>
+            </div>
+
+
+
+
+            <div id="latest-blog">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="heading-section">
+                                <h2>Feactured Products</h2>
+                                <img src="./static/images/under-heading.png" alt="" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+
+<!-- 
+                        <div class="col-md-4 col-sm-6">
+                            <div class="blog-post">
+                                <div class="blog-thumb">
+                                    <img src="{{p.image.url}}" alt="" style="height:270px;" />
+                                </div>
+                                <div class="blog-content">
+                                    <div class="content-show">
+                                        <h4><a href="{%url 'product_filter' p.category.slug %}">{{p.category}}</a></h4>
+
+                                    </div>
+                                    <div class="content-hide">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="blog-post">
+                                <div class="blog-thumb">
+                                    <img src="{{p.image.url}}" alt="" style="height:270px;" />
+                                </div>
+                                <div class="blog-content">
+                                    <div class="content-show">
+                                        <h4><a href="{%url 'product_filter' p.category.slug %}">{{p.category}}</a></h4>
+
+                                    </div>
+                                    <div class="content-hide">
+     
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="blog-post">
+                                <div class="blog-thumb">
+                                    <img src="{{p.image.url}}" alt="" style="height:270px;" />
+                                </div>
+                                <div class="blog-content">
+                                    <div class="content-show">
+                                        <h4><a href="{%url 'product_filter' p.category.slug %}">{{p.category}}</a></h4>
+
+                                    </div>
+                                    <div class="content-hide">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+
+
+                    </div>
+                    <div class="space50"></div>
+                    <div class="row">
+                        <div class="col-md-6" align="center" >
+                          <a href="about-us.html#water" style="font-size:18px"><h3>Weather proof tiles</h3></a>
+
+
+                        <img src="./static/images/7b.jpg" height="120px" width="180px" />
+                        </div>
+                        <div class="col-md-6" align="center">
+                          <a href="about-us.html#weather"style="font-size:18px"><h3>Is Your House Leaking ?</h3></a>
+
+                         <img src="./static/images/9b.jpg"height="120px" width="180px" />
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- <div id="testimonails">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="heading-section">
+                                <h2>What Customers Say</h2>
+                                <img src="/static/images/under-heading.png" alt="" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="testimonails-slider">
+                              <ul class="slides">
+                                <li>
+                                    <div class="testimonails-content">
+                                        <p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit sed arcu odio, sagittis vel diam in, malesuada malesuada risus. Aenean a sem leo. Nam ultricies dolor et mi tempor, non pulvinar felis sollicitudin.</p>
+                                        <h6>Jennifer - <a href="#">Chief Designer</a></h6>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="testimonails-content">
+                                        <p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit sed arcu odio, sagittis vel diam in, malesuada malesuada risus. Aenean a sem leo. Nam ultricies dolor et mi tempor, non pulvinar felis sollicitudin.</p>
+                                        <h6>Laureen - <a href="#">Marketing Executive</a></h6>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="testimonails-content">
+                                        <p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit sed arcu odio, sagittis vel diam in, malesuada malesuada risus. Aenean a sem leo. Nam ultricies dolor et mi tempor, non pulvinar felis sollicitudin.</p>
+                                        <h6>Tanya - <a href="#">Creative Director</a></h6>
+                                    </div>
+                                </li>
+                              </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+		      <footer>
+                      <div class="container">
+                          <div class="top-footer">
+
+                          </div>
+                          <div class="main-footer">
+                              <!-- <div class="row">
+                                  <div class="col-md-3">
+                                      <div class="about">
+                                          <h4 class="footer-title">About Grill</h4>
+                                          <p>Grill is free HTML5 template by <span class="blue">template</span><span class="green">mo</span> and it is a free responsive bootstrap layout that can be applied for any purpose.
+                                          <br><br>Credit goes to <a rel="nofollow" href="http://unsplash.com">Unsplash</a> for photos used in this template. Nam commodo erat quis ligula placerat viverra.</p>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-3">
+                                      <div class="shop-list">
+                                          <h4 class="footer-title">Shop Categories</h4>
+                                          <ul>
+                                              <li><a href="#"><i class="fa fa-angle-right"></i>New Grill Menu</a></li>
+                                              <li><a href="#"><i class="fa fa-angle-right"></i>Healthy Fresh Juices</a></li>
+                                              <li><a href="#"><i class="fa fa-angle-right"></i>Spicy Delicious Meals</a></li>
+                                              <li><a href="#"><i class="fa fa-angle-right"></i>Simple Italian Pizzas</a></li>
+                                              <li><a href="#"><i class="fa fa-angle-right"></i>Pure Good Yogurts</a></li>
+                                              <li><a href="#"><i class="fa fa-angle-right"></i>Ice-cream for kids</a></li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-3">
+                                      <div class="recent-posts">
+                                          <h4 class="footer-title">Recent posts</h4>
+                                          <div class="recent-post">
+                                              <div class="recent-post-thumb">
+                                                  <img src="/static/images/recent-post1.jpg" alt="">
+                                              </div>
+                                              <div class="recent-post-info">
+                                                  <h6><a href="#">Delicious and Healthy Menus</a></h6>
+                                                  <span>24/12/2084</span>
+                                              </div>
+                                          </div>
+                                          <div class="recent-post">
+                                              <div class="recent-post-thumb">
+                                                  <img src="/static/images/recent-post2.jpg" alt="">
+                                              </div>
+                                              <div class="recent-post-info">
+                                                  <h6><a href="#">Simple and effective meals</a></h6>
+                                                  <span>18/12/2084</span>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-3">
+                                      <div class="more-info">
+                                          <h4 class="footer-title">More info</h4>
+                                          <p>Sed dignissim, diam id molestie faucibus, purus nisl pretium quam, in pulvinar velit massa id elit.</p>
+                                          <ul>
+                                              <li><i class="fa fa-phone"></i>010-020-0340</li>
+                                              <li><i class="fa fa-globe"></i>123 Dagon Studio, Yakin Street, Digital Estate</li>
+                                              <li><i class="fa fa-envelope"></i><a href="#">info@company.com</a></li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </div> -->
+                          </div>
+                          <div class="bottom-footer">
+                              <p>
+                                <span>Copyright © 2017 <a href="#">Zaif World</a>
+                                  | Design: <a rel="nofollow" href="http://www.facebook.com" target="_parent"><span class="blue">Nisaf Nisthar</span></a></span>
+                              </p>
+                          </div>
+
+                      </div>
+                  </footer>
+
+
+              <script src="./static/js/vendor/jquery-1.11.0.min.js"></script>
+              <script src="./static/js/vendor/jquery.gmap3.min.js"></script>
+              <script src="./static/js/plugins.js"></script>
+              <script src="./static/js/main.js"></script>
+
+          </body>
+      </html>
+
