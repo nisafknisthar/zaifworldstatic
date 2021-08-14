@@ -52,7 +52,7 @@ http://www.templatemo.com/free-website-templates/417-grill
                         <div class="row">
                             <div class="col-md-1">
                                 <div class="logo">
-                                    <a href="{% url 'index' %}"><img src="./static/images/zaif1.gif" height="64px" Width="56px" title="Zaifworld" alt="Zaifworld" > </a>
+                                    <a href="index.html"><img src="./static/images/zaif1.gif" height="64px" Width="56px" title="Zaifworld" alt="Zaifworld" > </a>
                                 </div>
                             </div>
                             <div class="col-md-5">
@@ -107,18 +107,18 @@ http://www.templatemo.com/free-website-templates/417-grill
                                     <div class="row">
                                         <div class="col-md-8">
                                             <div class="message-form">
-                                                <form id="contact-form" method="post" class="send-message">
+                                                <form id="contact-form" method="post" action="mailto:info@zaifworld.com" class="send-message">
                             
 
                                                     <div class="row">
                                                     <div class="name col-md-4">
-                                                        <input type="text" name="name" id="name" placeholder="*Name" />
+                                                        <input type="text" name="name" id="name" placeholder="*Name" /> <br>
                                                     </div>
                                                     <div class="email col-md-4">
-                                                        <input type="text" name="email" id="email" placeholder="*Email" />
+                                                        <input type="text" name="email" id="email" placeholder="*Email" /> <br>
                                                     </div>
                                                     <div class="subject col-md-4">
-                                                        <input type="text" name="phone" id="phone" placeholder="*Phone Number" />
+                                                        <input type="text" name="phone" id="phone" placeholder="*Phone Number" /> <br>
                                                     </div>
                                                     </div>
                                                     <div class="row">
@@ -128,7 +128,7 @@ http://www.templatemo.com/free-website-templates/417-grill
                                                     </div>
                                                     <div class="send">
 
-                                                        <button><a href="javascript:;" name="submit" onclick="Submit()" style="color:white;">Submit</a>
+                                                        <button><a  name="submit" type="submit" style="color:white;">Submit</a>
                                                         </button>
                                                     </div>
                                                 </form>
@@ -186,63 +186,7 @@ http://www.templatemo.com/free-website-templates/417-grill
             </div>
 
 
-                    <script type="text/javascript">
-
-                    function Submit() {
-
-                     $('#loading').css('display','block');
-
-
-                           var formData = new FormData($('#contact-form')[0]);
-
-
-
-                           $.ajax({
-                                   url: "{% url 'contact' %}",
-                                   type: 'POST',
-                                   data: formData,
-                                   async: true,
-                                   cache: false,
-                                   contentType: false,
-                                   processData: false,
-
-                                   success: function(response_data) {
-
-                                   if(response_data.status=='success')
-                                   {
-
-
-                                        $('#name').val('');
-                                        $('#email').val('');
-                                        $('#phone').val('');
-                                        $('#message').val('');
-
-                                        $('#success').css('display','block');
-                                       $('#fail').css('display','none');
-            													 $('#nullval').css('display','none');
-                                       $('#loading').css('display','none');
-
-                                   }else {
-
-                                     $('#success').css('display','none');
-                                       $('#fail').css('display','block');
-            													 $('#nullval').css('display','none');
-                                       $('#loading').css('display','none');
-                                   }
-            											 if(response_data.status=='nullval')
-             											{
-             												$('#tsuccess').css('display','none');
-             													$('#tfail').css('display','none');
-
-             													$('#tloading').css('display','none');
-             													$('#nullval').css('display','block');
-             												}
-                               } // end of success
-
-                           }); // end of $.ajax
-                   }
-
-                   </script>
+  
  <footer>
                       <div class="container">
                           <div class="top-footer">
@@ -254,7 +198,7 @@ http://www.templatemo.com/free-website-templates/417-grill
                           <div class="bottom-footer">
                               <p>
                                 <span>Copyright © 2021 <a href="#">Zaif World</a>
-                                  | Design: <a rel="nofollow" href="http://www.facebook.com" target="_parent"><span class="blue">Nisaf Nisthar</span></a></span>
+                                  | Design: <a rel="nofollow" href="https://www.instagram.com/nisaf_nisthar/" target="_parent"><span class="blue">Nisaf Nisthar</span></a></span>
                               </p>
                           </div>
 
